@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
+<html lang="es">
 <html>
 
     <head>
+        <meta charset="UTF-8"/>
         <title>HTML</title>
-        <meta name="description" content="website description" />
+        <meta name="description" content="Descripción del patrón modelo vista controlador" />
         <meta name="keywords" content="website keywords, website keywords" />
         <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
         <link rel="stylesheet" type="text/css" href="style/style.css" />
@@ -14,7 +16,7 @@
             <div id="header">
                 <div id="logo">
                     <div id="logo_text">
-                        <h1><a href="index.html">Ejemplo<span class="logo_colour"> Nuevas Tecnologiasd de Desarrollo</span></a></h1>
+                        <h1><a href="index.html"><span class="logo_colour"> Nuevas Tecnologias de Desarrollo</span></a></h1>
                     </div>
                 </div>
                 <div id="menubar">
@@ -29,15 +31,37 @@
             </div>
             <div id="site_content">
                 <div id="content">
-                    <h1>Titulo</h1>
-                    <p>Texto Contenido</p>
-                    <h2>Subtitulo</h2>
-                    <p>texto 2      </p>
+                    <center><h1><b>MODELO VISTA CONTROLADOR</b></h1></center>
+                    <center><img src="mvc.jpg" alt="repositorio" height="200" width="400"></center>
+                    <br>
+                    <h3>¿Que es?</h3>
+                    <p>Modelo Vista Controlador (MVC) es un estilo de arquitectura de software que separa los datos de una aplicación, la interfaz de usuario, y la lógica de control en tres componentes distintos.</p>
+                    <br>
+                    <h3>Modelo</h3>
+                    <p>Es la capa donde se trabaja con los datos, por tanto contendrá mecanismos para acceder a la información y también para actualizar su estado. Los datos los tendremos habitualmente en una base de datos, por lo que en los modelos tendremos todas las funciones que accederán a las tablas y harán los correspondientes selects, updates, inserts, etc.</p>                
+                    <p>No obstante, cabe mencionar que cuando se trabaja con MCV lo habitual también es utilizar otras librerías como PDO o algún ORM como Doctrine, que nos permiten trabajar con abstracción de bases de datos y persistencia en objetos. Por ello, en vez de usar directamente sentencias SQL, que suelen depender del motor de base de datos con el que se esté trabajando, se utiliza un dialecto de acceso a datos basado en clases y objetos</p>
+                    <br>
+
+                    <h3>Vista</h3>
+                    <p>Las vistas, como su nombre nos hace entender, contienen el código de nuestra aplicación que va a producir la visualización de las interfaces de usuario, o sea, el código que nos permitirá renderizar los estados de nuestra aplicación en HTML. Compone la información que se envía al cliente y los mecanismos interacción con éste.</p>
+
+                    <p>En la vista generalmente trabajamos con los datos, sin embargo, no se realiza un acceso directo a éstos. Las vistas requerirán los datos a los modelos y ellas se generará la salida, tal como nuestra aplicación requiera.</p>
+                    <br>
+
+                    <h3>Controlador</h3>
+                    <p>El Controlador, que actúa como intermediario entre el Modelo y la Vista, gestionando el flujo de información entre ellos y las transformaciones para adaptar los datos a las necesidades de cada uno</p>
+                    <br>
+                   
+                    <h2>Referencias :</h2>
+                    <a href="https://si.ua.es/es/documentacion/asp-net-mvc-3/1-dia/modelo-vista-controlador-mvc.html">https://si.ua.es/es/documentacion/asp-net-mvc-3/1-dia/modelo-vista-controlador-mvc.html</a>
+                    <a href="https://desarrolloweb.com/articulos/que-es-mvc.html">https://desarrolloweb.com/articulos/que-es-mvc.html</a>
+                    <a href="https://www.fdi.ucm.es/profesor/jpavon/poo/2.14.MVC.pdf">https://www.fdi.ucm.es/profesor/jpavon/poo/2.14.MVC.pdf</a>
                 </div>
             </div>
             <div id="footer">
-                <p>/*pendiente por definir*/</p>
+                <p>Patrón Modelo Vista Controlador (MVC)</p>
             </div>
         </div>
     </body>
 </html>
+
